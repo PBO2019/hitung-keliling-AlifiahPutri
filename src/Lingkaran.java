@@ -1,15 +1,18 @@
 public class Lingkaran {
-    public static void main(String[] args) {
-    berhitung hitung = new berhitung();
-    hitung.hitungKeliling();
-    }
-    public static class berhitung{
-        public double phi = 3.14;
-        public int r = 21;
-        public double keliling = 2*phi*r;
+    private double keliling ;
+    private int r;
+    private double phi ;
 
-        void hitungKeliling(){
-            System.out.print("Keliling Lingkaran = " + keliling + "cm");
-        }
+    public void hitungLingkaran(){
+        this.keliling =  2*phi*r;
+    }
+    public void setR(int r){
+        this.r = r;
+    }
+    public void setPhi(double phi){
+        this.phi = phi;
+    }
+    public double getKeliling(){
+        return keliling;
     }
 }
